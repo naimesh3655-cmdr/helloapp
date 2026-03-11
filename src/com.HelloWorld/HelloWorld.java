@@ -22,17 +22,18 @@
  * 4. Array Indexing: Accessing the first argument with args[0]
  */
 
-public class HelloWorld 
-{
-    public static void main(String[] args) 
-    {
-        if(args.length > 0)
-        {
-            System.out.println("Hello " + args[0]);
+public class HelloApp {
+
+    public static void main(String[] args) {
+
+        String name;
+
+        if (args.length > 0) {
+            name = args[0];
+        } else {
+            name = "World";
         }
-        else
-        {
-            System.out.println("Hello User");
-        }
+
+        System.out.println("Hello " + name);
     }
 }
