@@ -1,25 +1,30 @@
-public class HelloWorld {
+/**
+ * UC5: Use enhanced for-loop to handle multiple names
+ */
+
+public class HelloApp {
 
     public static void main(String[] args) {
 
-        // If no arguments → default
+        // Default case
         if (args.length == 0) {
-            System.out.println("Hello World");
+            System.out.println("Hello, World!");
             return;
         }
 
-        // If names are provided
+        // Greeting with multiple names using enhanced for-loop
         System.out.print("Hello ");
 
-        for (int i = 0; i < args.length; i++) {
-            System.out.print(args[i]);
+        boolean first = true;
 
-            // Add comma except for last element
-            if (i != args.length - 1) {
+        for (String name : args) {
+            if (!first) {
                 System.out.print(", ");
             }
+            System.out.print(name);
+            first = false;
         }
 
-        System.out.println(); // new line
+        System.out.println();
     }
 }
