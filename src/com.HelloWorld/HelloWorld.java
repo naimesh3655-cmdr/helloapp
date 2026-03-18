@@ -1,29 +1,32 @@
 /**
  * HelloApp.java - A simple Java application that:
- * UC1: Displays "Hello World"
+ * UC1: Displays "Hello, World!"
  * UC2: Accepts a name as argument
- * UC4: Accepts multiple names and displays greeting
+ * UC4: Accepts multiple names
+ * UC5: Uses enhanced for-loop
  */
 
 public class HelloApp {
 
     public static void main(String[] args) {
 
-        // If no arguments → default
+        // Default case
         if (args.length == 0) {
-            System.out.println("Hello World");
+            System.out.println("Hello, World!");
             return;
         }
 
-        // If names are provided
+        // Greeting with multiple names using enhanced for-loop
         System.out.print("Hello ");
 
-        for (int i = 0; i < args.length; i++) {
-            System.out.print(args[i]);
+        boolean first = true;
 
-            if (i != args.length - 1) {
+        for (String name : args) {
+            if (!first) {
                 System.out.print(", ");
             }
+            System.out.print(name);
+            first = false;
         }
 
         System.out.println();
