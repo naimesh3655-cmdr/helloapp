@@ -1,4 +1,11 @@
-public class HelloWorld {
+/**
+ * HelloApp.java - A simple Java application that:
+ * UC1: Displays "Hello World"
+ * UC2: Accepts a name as argument
+ * UC4: Accepts multiple names and displays greeting
+ */
+
+public class HelloApp {
 
     public static void main(String[] args) {
 
@@ -14,12 +21,11 @@ public class HelloWorld {
         for (int i = 0; i < args.length; i++) {
             System.out.print(args[i]);
 
-            // Add comma except for last element
             if (i != args.length - 1) {
                 System.out.print(", ");
             }
         }
 
-        System.out.println(); // new line
+        System.out.println();
     }
 }
