@@ -1,5 +1,9 @@
 /**
- * UC5: Use enhanced for-loop to handle multiple names
+ * HelloApp.java - A simple Java application that:
+ * UC1: Displays "Hello, World!"
+ * UC2: Accepts a name as argument
+ * UC4: Accepts multiple names
+ * UC5: Uses enhanced for-loop
  */
 
 public class HelloApp {
