@@ -1,30 +1,26 @@
-/**
- * UC5: Use enhanced for-loop to handle multiple names
- */
-
-public class HelloApp {
+public class HelloWorld {
 
     public static void main(String[] args) {
 
-        // Default case
+        // Check if no arguments are passed
         if (args.length == 0) {
             System.out.println("Hello, World!");
-            return;
-        }
+        } 
+        else {
 
-        // Greeting with multiple names using enhanced for-loop
-        System.out.print("Hello ");
+            // String to store names
+            String names = "";
 
-        boolean first = true;
-
-        for (String name : args) {
-            if (!first) {
-                System.out.print(", ");
+            // Enhanced for loop to append names
+            for (String name : args) {
+                names = names + name + ", ";
             }
-            System.out.print(name);
-            first = false;
-        }
 
-        System.out.println();
+            // Remove trailing comma and space using substring
+            names = names.substring(0, names.length() - 2);
+
+            // Print final greeting
+            System.out.println("Hello, " + names + "!");
+        }
     }
 }
