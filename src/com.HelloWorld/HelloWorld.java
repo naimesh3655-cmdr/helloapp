@@ -5,30 +5,23 @@
  * UC4: Accepts multiple names
  * UC5: Uses enhanced for-loop
  * UC6: Uses substring method to remove trailing delimiter
+ * UC7: Uses String.join() method
  */
 
 public class HelloApp {
 
     public static void main(String[] args) {
 
-        // Check if no arguments are passed
+        // Check if no arguments
         if (args.length == 0) {
             System.out.println("Hello, World!");
         } 
         else {
 
-            // String to store names
-            String names = "";
+            // Using String.join() method
+            String names = String.join(", ", args);
 
-            // Enhanced for loop to append names
-            for (String name : args) {
-                names = names + name + ", ";
-            }
-
-            // Remove trailing comma and space using substring
-            names = names.substring(0, names.length() - 2);
-
-            // Print final greeting
+            // Print greeting
             System.out.println("Hello, " + names + "!");
         }
     }
