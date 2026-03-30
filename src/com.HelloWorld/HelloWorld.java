@@ -4,11 +4,11 @@
  * UC2: Accepts a name as argument
  * UC4: Accepts multiple names
  * UC5: Uses enhanced for-loop
- * UC6: Uses substring method
+ * UC6: Uses substring method to remove trailing delimiter
  * UC7: Uses String.join() method
  */
 
-public class HelloWorld {
+public class HelloApp {
 
     public static void main(String[] args) {
 
