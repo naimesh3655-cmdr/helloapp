@@ -1,4 +1,13 @@
-public class HelloWorld {
+/**
+ * HelloApp.java - A simple Java application that:
+ * UC1: Displays "Hello, World!"
+ * UC2: Accepts a name as argument
+ * UC4: Accepts multiple names
+ * UC5: Uses enhanced for-loop
+ * UC6: Uses substring method to remove trailing delimiter
+ */
+
+public class HelloApp {
 
     public static void main(String[] args) {
 
